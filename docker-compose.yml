@@ -1,0 +1,11 @@
+---
+version: '2'
+
+services:
+  pyarrow:
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - /home/centos/Sources:/notebooks/Sources
+    tty: true
